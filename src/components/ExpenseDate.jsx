@@ -1,9 +1,10 @@
 import "./ExpenseDate.css";
 
 export default function ExpenseDate(props) {
-  const month = props.date.toLocaleString("pt-BR", { month: "long" });
+  let month = props.date.toLocaleString("pt-BR", { month: "long" });
   const day = props.date.toLocaleString("pt-BR", { day: "2-digit" });
   const year = props.date.getFullYear("pt-BR", { year: "2-digit" });
+  month = month.charAt(0).toUpperCase() + month.slice(1);
 
   return (
     <div>
