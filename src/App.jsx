@@ -1,6 +1,6 @@
-import Expenses from "./components/Expenses.jsx";
+import Expenses from "./components/Expenses/Expenses.jsx";
 
-export default function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -44,4 +44,6 @@ export default function App() {
       <Expenses items={expenses}></Expenses>
     </div>
   );
-}
+};
+
+export default App;
