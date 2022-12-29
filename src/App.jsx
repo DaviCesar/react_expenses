@@ -26,18 +26,6 @@ const App = () => {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-    {
-      id: "e5",
-      title: "Bola de Futebol",
-      amount: 738.2,
-      date: new Date(2022, 7, 12),
-    },
-    {
-      id: "e6",
-      title: "Lixo",
-      amount: 234.12,
-      date: new Date(2023, 2, 6),
-    },
   ];
   return (
     <div>
