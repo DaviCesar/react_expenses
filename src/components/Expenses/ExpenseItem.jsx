@@ -7,14 +7,13 @@ const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
   const [amount, setAmount] = useState(props.amount);
 
-  const resetAmount = () => {
-    setAmount(0.0);
-    alert("Valor Resetado");
+  const clickHandler = () => {
+    setTitle("Teste");
+    alert("Titulo atualizado!!!");
   };
 
-  const clickHandler = () => {
-    setTitle("Updated");
-    alert("Titulo Atualizado");
+  const resetAmount = () => {
+    setAmount(0);
   };
 
   return (
@@ -24,7 +23,7 @@ const ExpenseItem = (props) => {
         <h2>{title}</h2>
         <div className="expense-item__price">R$ {amount}</div>
       </div>
-      <button onClick={clickHandler}>Mudar Título</button>
+      <button onClick={clickHandler}>Mudar Titulo</button>
       <button onClick={resetAmount}>Resetar</button>
     </Card>
   );
