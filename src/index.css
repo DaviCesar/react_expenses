@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+.plusbutton {
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
