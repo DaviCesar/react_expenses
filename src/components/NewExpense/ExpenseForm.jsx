@@ -47,7 +47,7 @@ const ExpenseForm = () => {
         </div>
         <div className="new-expense__actions">
           <button type="submit">
-            <span className="plusbutton"></span>
+            <span className="plusbutton">Add Expense</span>
           </button>
         </div>
       </form>
